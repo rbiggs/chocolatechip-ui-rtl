@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir='rtl'>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>מעוגל טבלה 2</title>
+    <link rel="stylesheet" href="../chui/chui.css">
+    <script src="../chui/jquery-1.7.2.js"></script>
+    <script src="../chui/chui.js"></script>
+    <script src="../chui/iscroll.js"></script>
+    <script type="text/javascript">
+        $(function() {
+       
+		});
+    </script>
+    
+</head>
+<body>
+	<app>
+		<view id="main" ui-background-style="striped" ui-navigation-status="current">
+			<navbar>
+				<h1>טבלה</h1>
+			</navbar>
+			<subview ui-associations="withNavBar">
+				<scrollpanel>
+					<tableview ui-kind="grouped">
+						<tablecell ui-implements="disclosure">
+							<celltitle>בלובק</celltitle>
+						</tablecell>
+						<tablecell ui-implements="disclosure">
+							<celltitle>איפסום</celltitle>
+						</tablecell>
+						<tablecell ui-implements="disclosure">
+							<celltitle>
+קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים.</celltitle>
+						</tablecell>
+						<tablecell ui-implements="disclosure">
+							<celltitle>בלינדו</celltitle>
+						</tablecell>
+						<tablecell ui-implements="disclosure">
+							<celltitle>למרקל</celltitle>
+						</tablecell>
+					</tableview>
+				</scrollpanel>
+			</subview>
+		</view>
+	</app>
+</body>
+</html>

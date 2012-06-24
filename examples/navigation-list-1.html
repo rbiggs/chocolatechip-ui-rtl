@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir='rtl'>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>ניווט 1</title>
+    <link rel="stylesheet" href="../chui/chui.css">
+    <script src="../chui/jquery-1.7.2.js"></script>
+    <script src="../chui/chui.js"></script>
+    <script src="../chui/iscroll.js"></script>
+    <script>
+        $(function() {
+        
+		});
+    </script>
+    
+</head>
+<body>
+	<app ui-background-style="striped">
+		<view id="main" ui-background-style="striped" ui-navigation-status="current">
+			<navbar>
+				<h1>כותרת</h1>
+			</navbar>
+			<subview ui-associations="withNavBar">
+				<scrollpanel>
+					<tableview>
+						<tablecell href="#people_view" ui-implements="detail-disclosure">
+							<celltitle>אנשים</celltitle>
+						</tablecell>
+						<tablecell href="#places_view" ui-implements="detail-disclosure">
+							<celltitle>מקומות</celltitle>
+						</tablecell>
+						<tablecell href="#things_view" ui-implements="detail-disclosure">
+							<celltitle>דברים</celltitle>
+						</tablecell>
+						<tablecell href="#animals_view" ui-implements="detail-disclosure">
+							<celltitle>בעלי חיים</celltitle>
+						</tablecell>
+						<tablecell href="#food_view" ui-implements="detail-disclosure">
+							<celltitle>מזון</celltitle>
+						</tablecell>
+					</tableview>
+				</scrollpanel>
+			</subview>
+		</view>
+		<view id="people_view" ui-background-style="striped" ui-navigation-status="upcoming">
+			<navbar>
+					<uibutton ui-bar-align="right" ui-implements="back">
+						<label>הקודם</label>
+					</uibutton>
+					<h1>אנשים</h1>
+			</navbar>
+			<subview ui-associations="withNavBar">
+				<scrollpanel>
+					<tableview ui-kind="grouped" ui-tablecell-order="stacked">
+						<tableheader>
+							זהו דף פירוט על אנשים.
+						</tableheader>
+						<tablecell class="ui-no-hover">
+							<celltitle>
+								אנשים, מה הם עושים
+							</celltitle>
+							<celldetail>
+							קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן מנת. קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה.
+							</celldetail>
+						</tablecell>
+						<tablefooter>
+							סיכום של מה שאנשים עושים עבורך ועבור אלה שאכפת לך.
+						</tablefooter>
+					</tableview>
+				</scrollpanel>
+			</subview>
+		</view>
+		<view id="places_view" ui-background-style="striped" ui-tablecell-order="stacked" ui-navigation-status="upcoming">
+			<navbar>
+					<uibutton ui-bar-align="right" ui-implements="back">
+						<label>הקודם</label>
+					</uibutton>
+					<h1>מקומות</h1>
+			</navbar>
+			<subview ui-associations="withNavBar">
+				<scrollpanel>
+					<tableview ui-kind="grouped">
+						<tableheader>
+							זהו דף פירוט על מקומות.
+						</tableheader>
+						<tablecell class="ui-no-hover">
+							<celltitle>
+								מקומות, לאן ללכת, לאן לא ללכת
+							</celltitle>
+							<celldetail>
+							גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי.
+							</celldetail>
+						</tablecell>
+						<tablefooter>
+							סיכום של מה המקומות לספק לך את אלה שאכפת לך.
+						</tablefooter>
+					</tableview>
+				</scrollpanel>
+			</subview>
+		</view>
+		<view id="things_view" ui-background-style="striped" ui-tablecell-order="stacked" ui-navigation-status="upcoming">
+			<navbar>
+					<uibutton ui-bar-align="right" ui-implements="back">
+						<label>הקודם</label>
+					</uibutton>
+					<h1>דברים</h1>
+			</navbar>
+			<subview ui-associations="withNavBar">
+				<scrollpanel>
+					<tableview ui-kind="grouped">
+						<tableheader>
+							זהו דף פירוט על דברים.
+						</tableheader>
+						<tablecell class="ui-no-hover">
+							<celltitle>
+								דברים, למה הם כל כך מבלבל?
+							</celltitle>
+							<celldetail>
+							קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
+							</celldetail>
+						</tablecell>
+						<tablefooter>
+							סיכום של דברים מה אומר לך מי שאכפת לך.
+						</tablefooter>
+					</tableview>
+				</scrollpanel>
+			</subview>
+		</view>
+		<view id="animals_view" ui-background-style="striped" ui-tablecell-order="stacked" ui-navigation-status="upcoming">
+			<navbar>
+					<uibutton ui-bar-align="right" ui-implements="back">
+						<label>הקודם</label>
+					</uibutton>
+					<h1>בעלי חיים</h1>
+			</navbar>
+			<subview ui-associations="withNavBar">
+				<scrollpanel>
+					<tableview ui-kind="grouped">
+						<tableheader>
+							זהו דף פירוט על בעלי חיים.
+						</tableheader>
+						<tablecell class="ui-no-hover">
+							<celltitle>
+								בעלי חיים, הם רוצים לתפוס אותך.
+							</celltitle>
+							<celldetail>
+							לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי.
+							</celldetail>
+						</tablecell>
+						<tablefooter>
+							סיכום של מה החיות יעשו לך את אלה שאכפת לך.
+						</tablefooter>
+					</tableview>
+				</scrollpanel>
+			</subview>
+		</view>
+		<view id="food_view" ui-background-style="striped" ui-tablecell-order="stacked" ui-navigation-status="upcoming">
+			<navbar>
+					<uibutton ui-bar-align="right" ui-implements="back">
+						<label>הקודם</label>
+					</uibutton>
+					<h1>מזון</h1>
+			</navbar>
+			<subview ui-associations="withNavBar">
+				<scrollpanel>
+					<tableview ui-kind="grouped">
+						<tableheader>
+							זהו דף פירוט על אוכל.
+						</tableheader>
+						<tablecell class="ui-no-hover">
+							<celltitle>
+								אוכל, זה פשוט כל כך טעים.
+							</celltitle>
+							<celldetail>
+							קונסקטורר אדיפיסינג אלית צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש.
+							</celldetail>
+						</tablecell>
+						<tablefooter>
+							סיכום של מה אוכל אותך ואת אלה שאכפת לך יכול לאכול.
+						</tablefooter>
+					</tableview>
+				</scrollpanel>
+			</subview>
+		</view>
+	</app>
+</body>
+</html>

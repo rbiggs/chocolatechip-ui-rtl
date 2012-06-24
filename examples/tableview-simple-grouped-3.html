@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir='rtl'>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>מעוגל טבלה 3</title>
+    <link rel="stylesheet" href="../chui/chui.css">
+    <script src="../chui/jquery-1.7.2.js" type="text/javascript"></script>
+    <script src="../chui/iscroll.js" type="text/javascript"></script>
+    <script src="../chui/chui.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function() {
+        
+		});
+    </script>
+    
+</head>
+<body>
+	<app>
+		<view id="main" ui-background-style="striped" ui-navigation-status="current">
+			<navbar>
+				<h1>טבלה</h1>
+			</navbar>
+			<subview ui-associations="withNavBar">
+				<scrollpanel>
+					<tableview ui-kind="grouped">
+						<tablecell ui-usage="icon" ui-implements="disclosure">
+							<img src="../images/ipod.png">
+							<celltitle>השמה</celltitle>
+						</tablecell>
+						<tablecell ui-usage="icon" ui-implements="disclosure">
+							<img src="../images/phone.png">
+							<celltitle>צמלח</celltitle>
+						</tablecell>
+						<tablecell ui-usage="icon" ui-implements="disclosure">
+							<img src="../images/mail.png">
+							<celltitle>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.</celltitle>
+						</tablecell>
+						<tablecell ui-usage="icon" ui-implements="disclosure">
+							<img src="../images/safari.png">
+							<celltitle>בלוקריה</celltitle>
+						</tablecell>
+						<tablecell ui-usage="icon" ui-implements="disclosure">
+							<img src="../images/sms.png">
+							<celltitle>נובש</celltitle>
+						</tablecell>
+						<tablecell ui-usage="icon" ui-implements="disclosure">
+							<img src="../images/store.png">
+							<celltitle>לפריקך</celltitle>
+						</tablecell>
+					</tableview>
+				</scrollpanel>
+			</subview>
+		</view>
+	</app>
+</body>
+</html>
